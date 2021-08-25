@@ -22,6 +22,9 @@
         # Passo la parola da censurare tramite parametro GET :
         $badWord = $_GET["parola"];
         #Devo sostituire la parola inserita con degli asterischi: 
+        $censura = str_replace($badWord, '***', $testo );
+        
+        echo $censura;
 
     ?>
 
